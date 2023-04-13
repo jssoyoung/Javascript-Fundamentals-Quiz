@@ -9,7 +9,7 @@
 
   <body>
     <header id="start-page">
-      <div class="header">Coding Quiz Challenge</div>
+      <h1 class="header">Coding Quiz Challenge</h1>
       <button id="start-button">Start</button>
       <section>
         <div class="instructions">Try to answer the following code-related questions correctly within the time limit. 
@@ -20,20 +20,27 @@
     <main id="main-quiz">
       <section>
         <div id="quiz">
-          <h1>Questions</h1>
-          <div class="answers">
-            <p>Answers</p>
-          </div>
         </div>
         <div id = "countdown" class="timer-text">
-          <div class="large-font timer-count">100</div>
-          <h2>seconds remaining</h2>
+          <p><span id = "time-remaining">100</span> seconds remaining</p>
         </div>
       </section>
-      <section id="score-block" class="hide">
-        <p>Scores:</p>
+      <section id="score-block">
+        <p>Score: <span id = "points">0</span></p>
       </section>
     </main>
+
+    <section id="result-page">
+      <p>All done!</p>
+      <label>Initials:</label>
+      <input type="text" id="name"></input>
+      <button id="submit-button">Submit</button>
+    </section>
+
+    <section id="highscore">
+      <p>Highscore:</p>
+      <button id="reset-game-button">Reset Game</button>
+    </section>
     <script src="assets/script.js"></script>
   </body>
 </html>
