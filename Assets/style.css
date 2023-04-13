@@ -9,7 +9,7 @@
   }
 
   /* for the start page */
-  button {
+  #start-button {
     background: purple;
     border-radius: 8px;
     color: white;
@@ -43,38 +43,101 @@
     text-align: center;
   }
 
+  /* to display quiz once start button is pressed */
   #main-quiz {
-    display:none;
+    display: none;
+    padding-left: 40px;
   }
 
   #main-quiz.show {
-    display:block;
+    display: block;
   }
 
   #start-page.hide {
-    display:none;
+    display: none;
+  }
+ 
+  #result-page {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+   }
+   
+  #result-page.show {
+    display: block; 
+   } 
+
+   #highscore {
+    display: none;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    border: 3px solid purple;
+    padding: 10px;
+   }
+
+   #highscore.show {
+    display: block;
+   }
+
+  /* to display timer on the right side */
+  .timer-text {
+    position: fixed;
+    top: 100px;
+    left: 80%;
+    width: 250px;
   }
 
-  h1 {
-    font-size: 2em;
-    padding: 30px;
+  /* to display score on the right side */
+  #score-block {
+    position: fixed;
+    top: 200px;
+    left: 80%;
+    width: 250px;
   }
 
+  /* styling for quiz */
   .answers {
     font-size: 1.5em;
     padding-left: 30px;
   }
 
-  .timer-text {
-    text-align: right;
-    padding-right: 30px;
-    padding-top: 30px;
+  p {
+    font-size: 2em;
   }
 
-  h2 {
+  #main-quiz button {
+    background: purple;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 500px;
+    padding: 20px 52px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin-top: 0.6em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #submit-button, #reset-game-button {
+    background: purple;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
     font-size: 1em;
-  }
-
-  #score-block {
-    padding-left: 30px;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 500px;
+    padding: 10px 20px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin-top: 0.6em;
   }
