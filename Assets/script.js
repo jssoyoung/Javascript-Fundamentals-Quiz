@@ -117,6 +117,14 @@ function showHighscore() {
     }
     highscores.push(newScore);
     localStorage.setItem("highscores", JSON.stringify(highscores));
+    var scoreDisplay = document.querySelector("#highscore-display");
+    var scoreArray = {highscores};
+    for(var i = 0; i < 4; i++) {    
+        var highscoreEl = document.createElement("p");
+        highscoreEl.textContent = `${highscores[i].user} ${highscores[i].score}`;
+        console.log({highscores});
+        scoreDisplay.appendChild(highscoreEl);
+    };
     resetGame();
 }
 
