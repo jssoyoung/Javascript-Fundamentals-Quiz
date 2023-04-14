@@ -104,10 +104,10 @@ function checkAnswer (event) {
     };
 }
 
+// Function to store highscore and display onto highscore screen
 function showHighscore() {
     document.querySelector("#result-page").setAttribute("class", "hide");
     document.querySelector("#highscore").setAttribute("class", "show");
-    //TODO display initials + scores <li>
     const user = JSON.parse(localStorage.getItem("user"));
     const score = JSON.parse(localStorage.getItem("score"));
     var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
