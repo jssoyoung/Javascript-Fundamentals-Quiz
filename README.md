@@ -4,7 +4,7 @@
 
 This website showcases a javascript quiz. The first screen will show the title of the quiz, basic instructions, and have a start button. Once the start button is clicked, the user could take the quiz. The quiz will notify the user if they got the question correct or incorrect. Once the quiz is finished, the user could add their highscore to the quiz or even retake the quiz. This website contains notes on HTML, CSS. and JavaScript. 
 Here is the link to the website: https://jssoyoung.github.io/Javascript-Fundamentals-Quiz/
-Here is an image of the website: ![Portfolio](Assets/Images/javascript-quiz.png)
+Here is an image of the website: ![Portfolio](Assets/Images/javascript-quiz-screenshot.png)
 
 ## Installation
 
