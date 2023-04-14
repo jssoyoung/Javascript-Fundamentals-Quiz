@@ -57,6 +57,7 @@
     display: none;
   }
  
+  /* display and hide results and highscore pages */
   #result-page {
     display: none;
     text-align: center;
@@ -106,6 +107,7 @@
     font-size: 2em;
   }
 
+  /* buttons css */
   #main-quiz button {
     background: purple;
     border-radius: 8px;
